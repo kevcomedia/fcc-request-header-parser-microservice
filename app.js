@@ -1,6 +1,7 @@
 const express = require('express')
 const app = express()
 
+app.set('trust proxy', true)
 app.set('view engine', 'pug')
 
 app.use('/assets', express.static(__dirname + '/public'))
